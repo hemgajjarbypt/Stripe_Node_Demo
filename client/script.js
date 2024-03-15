@@ -48,8 +48,7 @@ buttons.forEach((button) => {
         fetch('http://localhost:4242/create-checkout-session', {
             method: 'POST',
             headers: {
-                'Content-type': 'application/json',
-                'Authorization': 'Bearer sk_test_51Oqsm3SFJBkNPmS1CIHqv78AyZTLkvIKGoDvYcVvBmzZLot4W4brf8L9M2H3HAKTyVwo5Rv0AWZPQ0tL3rhN1GXA00xSoY9HBe'
+                'Content-type': 'application/json'
             },
             body: JSON.stringify({
                 item: { id: button.id, quantity: parseInt(button.parentNode.parentNode.querySelector('.counter').innerHTML) }
